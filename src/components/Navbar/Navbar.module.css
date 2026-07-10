@@ -1,4 +1,22 @@
 nav {
     display: flex;
-    
+    width: 100vw;
+    padding: 2rem;
+}
+
+.home {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.store {
+    display: inline-block;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.placeholder {
+    display: inline-block;
+    margin-left: 2rem;
+    text-decoration: none;
 }

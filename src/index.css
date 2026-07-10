@@ -17,9 +17,20 @@
   }
 }
 
+@font-face {
+  font-family: 'Squiggle';
+  src: url('./assets/fonts/Playwrite_ID/PlaywriteID-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -44,4 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+
+nav {
+  font-family: 'Squiggle', 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
