@@ -7,9 +7,9 @@ import styles from './Navbar.module.css'
 function Navbar() {
     return (
         <nav>
-            <Link className={styles.home}>Home</Link>
-            <Link className={styles.store}>Store</Link>
-            <Link className={styles.placeholder}>Cart</Link>
+            <Link to='/' className={styles.home}>Home</Link>
+            <Link to='/shop' className={styles.store}>Store</Link>
+            <Link to='/cart' className={styles.placeholder}>Cart</Link>
             {/* <Cart /> */}
         </nav>
     );
