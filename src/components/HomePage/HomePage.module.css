@@ -2,6 +2,25 @@
     width: 100%;
 }
 
+.heroDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.29)
+}
+
+.heroImg {
+    width: 35vw;
+}
+
+.heroText {
+    width: 50vw;
+}
+
+.heroText > * {
+    margin-bottom: 1.5rem;
+}
+
 .products {
     display: grid;
     width: 90%;
@@ -15,9 +34,6 @@
 .products > h2 {
     grid-row: 1;
     grid-column: 1 / 4;
-}
-
-h2 {
     text-align: center;
     font-size: 3rem;
 }
@@ -46,6 +62,21 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+.heroDiv {
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroImg {
+    width: 80vw;
+}
+
+.heroText {
+    width: 80vw;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .products {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
