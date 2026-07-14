@@ -34,7 +34,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Outlet />
+        <Outlet context={inventory} />
       </main>
       <footer>
         <span>Some words</span>
