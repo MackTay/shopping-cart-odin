@@ -1,0 +1,41 @@
+.card {
+ display: flex;
+ width: 75vw;
+ margin: 2rem auto;
+ align-items: center;
+ gap: 1rem;
+}
+
+.cardImg {
+    width: 20vw;
+}
+
+.left, .right {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    appearance: none;
+    cursor: pointer;
+    max-height: fit-content;
+}
+
+svg {
+    min-width: 5vw;
+}
+
+.itemCount {
+    display: flex;
+    align-items: center;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit {}

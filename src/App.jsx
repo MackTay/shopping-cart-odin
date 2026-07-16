@@ -8,6 +8,8 @@ function App() {
   const [inventory, setInventory] = useState();
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const [cart, setCart] = useState([]);
   
   useEffect(() => {
     fetch('https://fakestoreapi.com/products', {
@@ -28,13 +30,13 @@ function App() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>A network error was encountered</p>;
-  console.log(inventory);
   
   return (
     <>
       <Navbar />
       <main>
-        <Outlet context={inventory} />
+        {console.log("cart in parent:", cart)}
+        <Outlet context={{ inventory, cart, setCart }} />
       </main>
       <footer>
         <span>Some words</span>

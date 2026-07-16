@@ -1,10 +1,28 @@
 import { useState } from 'react'
 import '../../index.css'
 import styles from './ShopPage.module.css'
+import ProductCard from '../ProductCard/ProductCard.jsx';
+import { useOutletContext } from "react-router";
+
+function renderProducts() {
+    const { inventory } = useOutletContext();
+
+    return inventory.map(e => {
+        return (
+            <ProductCard product={e} key={e.id} />
+        )
+    })
+};
 
 function ShopPage() {
+    const { inventory } = useOutletContext();
+
+
+
     return (
-        <div><p>This is the shop page!</p></div>
+        <div>
+            {renderProducts()}
+        </div>
     );
 }
 

@@ -6,7 +6,7 @@ import shopping from '../../assets/shopping.jpg'
 import styles from './HomePage.module.css';
 
 function HomePage() {
-    const inventory = useOutletContext();
+    const { inventory } = useOutletContext();
 
     const exInvArr = [];
     while (exInvArr.length <=3) {
