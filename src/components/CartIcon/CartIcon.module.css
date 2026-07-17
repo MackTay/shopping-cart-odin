@@ -1,0 +1,11 @@
+.container {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    left: 45%;
+    bottom: 90%;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
