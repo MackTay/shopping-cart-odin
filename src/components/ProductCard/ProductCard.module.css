@@ -38,4 +38,14 @@ svg {
     gap: 0.5rem;
 }
 
-.submit {}
+.submit {
+    background-color: var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.submit:active {
+    background-color: #5f808a;
+    transform: scale(0.95);
+}
