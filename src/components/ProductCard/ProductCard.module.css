@@ -67,3 +67,33 @@ input {
     background-color: #5f808a;
     transform: scale(0.95);
 }
+
+.price {
+    font-size: calc(0.5rem + 1vw);
+    font-weight: bold;
+}
+
+.category {
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .title, .price {
+        text-align: center;
+    }
+
+    .description, .category {
+        text-align: justify;
+    }
+
+    .textDiv > * {
+        margin-bottom: 0.5rem;
+    }
+}

@@ -15,15 +15,13 @@ function CartDisplayCard({ cartItem }) {
     };
 
     return (
-        <div className={styles.fullDiv}>
-            <div className={styles.imgDiv}>
-                <img src={cartItem.image} alt={cartItem.title} />
-                <div className={styles.infoDiv}>
-                    <h2>{cartItem.title}</h2>
-                    <div className={styles.priceDiv}>
-                        <span>${cartItem.price} x {cartItem.total} = ${cartItem.price * cartItem.total}</span>
-                        <button className={styles.submit} onClick={() => remove(cartItem)}>Remove from cart</button>
-                    </div>
+        <div className={styles.overDiv}>
+            <img src={cartItem.image} alt={cartItem.title} />
+            <div className={styles.infoDiv}>
+                <h2>{cartItem.title}</h2>
+                <div className={styles.priceDiv}>
+                    <p className={styles.price}>${cartItem.price} x {cartItem.total} = ${cartItem.price * cartItem.total}</p>
+                    <button className={styles.submit} onClick={() => remove(cartItem)}>Remove from cart</button>
                 </div>
             </div>
         </div>

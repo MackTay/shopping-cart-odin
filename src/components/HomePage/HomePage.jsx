@@ -27,13 +27,13 @@ function HomePage() {
             <div className={styles.products}>
                 <h2>10s of HOT items to choose from</h2>
                 <div className={styles.gallery1}>
-                    <img src={exInvArr[0]} alt="example product" />
+                    <img className={styles.productImg} src={exInvArr[0]} alt="example product" />
                     </div>
                 <div className={styles.gallery2}>
-                    <img src={exInvArr[1]} alt="example product" />
+                    <img className={styles.productImg} src={exInvArr[1]} alt="example product" />
                     </div>
                 <div className={styles.gallery3}>
-                    <img src={exInvArr[2]} alt="example product" />
+                    <img className={styles.productImg} src={exInvArr[2]} alt="example product" />
                     </div>
                 <Link to='/shop' className={styles.shopLink}>Shop Now!</Link>
             </div>

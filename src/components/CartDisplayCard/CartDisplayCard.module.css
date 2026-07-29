@@ -1,14 +1,9 @@
-.fullDiv {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-}
-
-.imgDiv {
+.overDiv {
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
     align-items: center;
+    margin: 2rem auto;
 }
 
 img {
@@ -32,9 +27,23 @@ img {
     padding: 0.5rem;
     border-radius: 8px;
     border: none;
+    font-size: calc(0.4rem + 1vw);
 }
 
 .submit:active {
     background-color: #5f808a;
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .overDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+    .priceDiv {
+        flex-direction: column;
+    }
+    .priceDiv > * {
+        margin-bottom: 0.5rem;
+    }
 }

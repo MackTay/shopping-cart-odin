@@ -29,8 +29,8 @@
 
 :root {
   --primary-color: #FED99B;
-  --secondary-color: #C6DDF0;
-  --tertiary-color: #7B9EA8;
+  --secondary-color: #F7C7DB;
+  --tertiary-color: #A0C4E2;
 }
 
 body {
@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+h1 {
+  font-size: calc(1.5rem + 4vw);
+}
+
 #root, #__next {
   isolation: isolate;
 }
@@ -79,7 +83,7 @@ a {
 }
 
 footer {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-around;
   padding: 0.75rem 0;

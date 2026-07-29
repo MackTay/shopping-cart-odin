@@ -46,10 +46,10 @@ function ProductCard({ product }) {
         <div className={styles.card}>
             <img className={styles.cardImg} src={product.image} alt={product.title} />
             <div className={styles.textDiv}>
-                <h2>{product.title}</h2>
-                <p>${product.price}</p>
-                <p>{product.description}</p>
-                <p>{product.category}</p>
+                <h2 className={styles.title}>{product.title}</h2>
+                <p className={styles.price}>${product.price}</p>
+                <p className={styles.description}>{product.description}</p>
+                <p className={styles.category}>{product.category}</p>
             </div>
             <div className={styles.btnDiv}>
                 <div className={styles.itemCount}>
