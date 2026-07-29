@@ -4,6 +4,8 @@ nav {
     padding: 1.5rem;
     background-color: var(--primary-color);
     color: black;
+    position: sticky;
+    top: 0;
 }
 
 .home {

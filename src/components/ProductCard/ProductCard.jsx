@@ -4,7 +4,7 @@ import '../../index.css';
 import styles from './ProductCard.module.css';
 
 function ProductCard({ product }) {
-    const { inventory, cart, setCart } = useOutletContext();
+    const { cart, setCart } = useOutletContext();
     const [count, setCount] = useState(0);
 
     function decrease() {
@@ -24,6 +24,7 @@ function ProductCard({ product }) {
     };
 
     function submit(product) {
+        if (count < 1) return;
         const newProd = product;
         newProd.total = count;
 

@@ -1,0 +1,38 @@
+.overDiv {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.cart {
+    grid-column: 1;
+    margin: 0 auto;
+    max-width: 75vw;
+}
+
+.sideWrap {
+    grid-column: 2;
+    box-shadow: -4px 0px 2px 0px rgba(0,0,0,0.18);
+}
+
+.sidebar {
+    position: sticky;
+    top: 80px;
+    padding: 40% 1rem;
+}
+
+.sidebar > * {
+    margin-bottom: 1rem;
+}
+
+.submit {
+    background-color: var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.submit:active {
+    background-color: #5f808a;
+    transform: scale(0.95);
+}

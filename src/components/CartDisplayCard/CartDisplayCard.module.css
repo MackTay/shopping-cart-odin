@@ -1,0 +1,40 @@
+.fullDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+
+img {
+    width: calc(30px + 5vw);
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1rem;
+}
+
+.priceDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    background-color: var(--tertiary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.submit:active {
+    background-color: #5f808a;
+    transform: scale(0.95);
+}

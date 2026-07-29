@@ -35,7 +35,6 @@ function App() {
     <>
       <Navbar cart={cart} />
       <main>
-        {console.log("cart in parent:", cart)}
         <Outlet context={{ inventory, cart, setCart }} />
       </main>
       <footer>
